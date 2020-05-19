@@ -1,0 +1,80 @@
+Registration JSON for smartlock in room C8-18
+
+[
+  {
+    "internalId": "smartLockC8-18",
+    "pluginId": "sonoffLock",
+    "accessPolicy": {
+      "relationOperator": "AND",
+      "compositeAccessPolicySpecifiers": null,
+      "policyType": "CAP",
+      "singleTokenAccessPolicySpecifiers": [
+        {
+          "policyType": "SLHTAP",
+          "requiredClaims": {
+            "iss": "symbIoTe-lab"
+          }
+        },
+        {
+          "policyType": "STAP",
+          "requiredClaims": {
+            "SYMBIOTE_SYMBIOTE_name": "smartLockC8-18"
+          }
+        }
+      ]
+    },
+    "filteringPolicy": {
+      "relationOperator": "AND",
+      "compositeAccessPolicySpecifiers": null,
+      "policyType": "CAP",
+      "singleTokenAccessPolicySpecifiers": [
+        {
+          "policyType": "SLHTAP",
+          "requiredClaims": {
+            "iss": "symbIoTe-lab"
+          }
+        },
+        {
+          "policyType": "STAP",
+          "requiredClaims": {
+            "SYMBIOTE_SYMBIOTE_name": "smartLockC8-18"
+          }
+        }
+      ]
+    },
+    "resource": {
+      "@c": ".Actuator",
+      "name": "smartPlugTest",
+      "description": [
+        "switch"
+      ],
+      "services": null,
+      "capabilities": [
+        {
+          "name": "OnOffCapabililty",
+          "parameters": [
+            {
+              "name": "on",
+              "mandatory": true,
+              "datatype": {
+                "@c": ".PrimitiveDatatype",
+                "baseDatatype": "http://www.w3.org/2001/XMLSchema#boolean"
+              }
+            }
+          ]
+        }
+      ],
+      "locatedAt": {
+        "@c": ".WGS84Location",
+        "longitude": 15.9714607,
+        "latitude": 45.8014691,
+        "altitude": 117,
+        "name": "Zg",
+        "description": [
+          "This is Zagreb"
+        ]
+      },
+      "interworkingServiceURL": "https://DemoPlatform2.com"
+    }
+  }
+]

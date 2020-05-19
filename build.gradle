@@ -1,0 +1,12 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    jcenter()
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+	compile('com.github.symbiote-h2020:SymbIoTeLibraries:6.0.+') { changing = true }
+}
